@@ -14,9 +14,9 @@ git clone https://github.com/jimeh/tmuxifier.git ~/.tmuxifier
 
 
 ## 2. tmux
-Lagre filen `.tmux.conf` til home(~/) directory.
+Lagre filen `tmux.conf` til home(~/) directory med prefix `.`.
 
-dvs. ~/.tmux.conf
+dvs. lagre som: `~/.tmux.conf`
 
 
 
