@@ -29,6 +29,10 @@ nvim .bashrc
 > #tmuxifier added to path 
 >
 > export PATH="$HOME/.tmuxifier/bin:$PATH"
+>
+> 
+> #ignore C-b command 
+> set -o ignoreeof
 
 ---
 
