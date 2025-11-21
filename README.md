@@ -1,63 +1,27 @@
-# Config for linux med lazyvim + tmux
 
-## 1. Dependencies
-Kjør følgende kommandoer:
+# Linux terminal config
+
+#### 1. Dependencies
 ```
-sudo apt update
+``` 
+````
+zsh
+```
+# ubuntu/debian
+sudo apt update && sudo apt install zsh
 
-sudo apt install tmux
-
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-git clone -b v2.1.2 https://github.com/catppuccin/tmux.git ~/.tmux/plugins/catppuccin/
-git clone https://github.com/jimeh/tmuxifier.git ~/.tmuxifier
+# arch
+sudo pacman -Syu && sudo pacman -S zsh
 ```
 
-
-## 2. tmux
-Lagre filen `tmux.conf` til home(~/) directory med prefix `.`.
-
-dvs. lagre som: `~/.tmux.conf`
-
-
-
-## 3. tmuxifier
-### Legg til tmuxifier i PATH:
+Oh My Zsh
 ```
-nvim .bashrc
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
-##### Paste inn
-> #tmuxifier added to path 
->
-> export PATH="$HOME/.tmuxifier/bin:$PATH"
->
-> 
-> #ignore C-b command
-> 
-> set -o ignoreeof
 
----
-
-### Init tmuxifier på bash startup:
+PowerLevel10k
 ```
-nvim .profile
+git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
 ```
-##### Paste inn:
 
-> #init tmuxifier
-> 
-> eval "$(tmuxifier init -)"
-
----
-
-### Legg til tmuxifier templates:
-```
-mkdir ~/.tmuxifier/templates
-```
-Lagre filen `session.sh`
-
----
-
-## ressurser
-https://github.com/tmux-plugins/tpm
-
-https://github.com/christoomey/vim-tmux-navigator
+#### 2. 
