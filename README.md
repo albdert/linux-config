@@ -39,7 +39,11 @@ git clone https://github.com/zdharma-continuum/fast-syntax-highlighting.git ${ZS
 
 git clone --depth 1 -- https://github.com/marlonrichert/zsh-autocomplete.git $ZSH_CUSTOM/plugins/zsh-autocomplete
 ```
-
+#### Nerd font
+```bash
+#arch
+sudo pacman -S ttf-nerd-fonts-symbols-mono
+```
 
 ## 2. Configuration
 #### Oh My Zsh/Powerlevel10k
