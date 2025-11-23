@@ -45,6 +45,12 @@ git clone --depth 1 -- https://github.com/marlonrichert/zsh-autocomplete.git $ZS
 sudo pacman -S ttf-nerd-fonts-symbols-mono
 ```
 
+#### Neovim
+```bash
+#arch
+sudo pacman -S neovim
+```
+
 ## 2. Configuration
 #### Oh My Zsh/Powerlevel10k
 Rediger `.zshrc` med følgende linje:
@@ -82,3 +88,13 @@ Kopier `.wezterm.lua` fil til `~` directory:
 git clonoe <repo>
 cp ./<repo>/filer/.wezterm.lua ~/.wezterm.lua
 ```
+
+#### Neovim
+Fjern gamle config filer:
+```bash
+rm -rf ~/.config/nvim
+rm -rf ~/.local/share/nvim
+rm -rf ~/.local/state/nvim
+```
+Clone dette repo og kopier `nvim` directory inn i `~/.config`.
+Åpne nvim og kjør `:Lazy` og `:checkhealth`.
