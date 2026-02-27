@@ -40,7 +40,8 @@ include "dms/layout.kdl"
 include "dms/alttab.kdl"
 include "dms/binds.kdl"
 
-# rediger instillinger
+# kopier instillinger
+cp ./linux-config/filer/dms/settings.json ~/.config/DankMaterialShell/
 ```
 #### fuzzel
 ```
