@@ -47,6 +47,11 @@ cp ./linux-config/filer/dms/settings.json ~/.config/DankMaterialShell/
 ```
 # klone repo
 cp ./linux-config/filer/fuzzel.ini /etc/xdg/fuzzel/
+
+# power menu
+mkdir ~/.config/niri/scripts
+cp ./linux-config/filer/fuzzel-power.sh ~/.config/niri/scripts/
+chmod +x ~/.config/niri/scripts/fuzzel-power.sh
 ```
 #### swaylock
 ```
