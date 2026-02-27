@@ -1,3 +1,59 @@
+# Desktop config
+
+## 1. Dependencies
+#### niri/dms
+```
+# ubuntu
+sudo add-apt-repository ppa:avengemedia/danklinux
+sudo add-apt-repository ppa:avengemedia/dms
+sudo apt install niri dms
+
+# arch
+sudo pacman -Syu niri xwayland-satellite xdg-desktop-portal-gnome xdg-desktop-portal-gtk alacritty
+yay -S dms-shell-bin matugen cava qt6-multimedia-ffmpeg
+systemctl --user add-wants niri.service dms
+```
+#### fuzzel, mako, swaylock
+```
+# ubuntu
+sudo apt update
+sudo apt install fuzzel mako swaylock
+
+# arch
+sudo pacman -Syu fuzzel mako swaylock
+```
+## 2. Configuration
+#### niri
+```
+# klone repo
+git clond <link>
+cp ./linux-config/filer/niri/config.kdl ~/.config/niri/
+```
+#### dms
+```
+mkdir -p ~/.config/niri/dms
+touch ~/.config/niri/dms/{colors,layout,alttab,binds}.kdl
+
+# Add to the end of ~/.config/niri/config.kdl
+include "dms/colors.kdl"
+include "dms/layout.kdl"
+include "dms/alttab.kdl"
+include "dms/binds.kdl"
+
+# rediger instillinger
+```
+#### fuzzel
+```
+# klone repo
+cp ./linux-config/filer/fuzzel.ini /etc/xdg/fuzzel/
+```
+#### swaylock
+```
+mkdir .config/swaylock
+
+# klone repo
+cp ./linux-config/filer/swaylock/config ~/.config/swaylock/
+```
 
 # Linux terminal config
 
