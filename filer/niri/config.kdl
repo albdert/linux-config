@@ -367,6 +367,7 @@ binds {
     Mod+Return hotkey-overlay-title="Open a Terminal: wezterm" { spawn "wezterm"; }
     Alt+Space hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
     Super+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
+    Super+P hotkey-overlay-title="Power menu" { spawn-sh "~/.config/niri/scripts/fuzzel-power.sh"; }
 
     // Use spawn-sh to run a shell command. Do this if you need pipes, multiple commands, etc.
     // Note: the entire command goes as a single argument. It's passed verbatim to `sh -c`.
