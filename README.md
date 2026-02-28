@@ -13,14 +13,14 @@ sudo pacman -Syu niri xwayland-satellite xdg-desktop-portal-gnome xdg-desktop-po
 yay -S dms-shell-bin matugen cava qt6-multimedia-ffmpeg
 systemctl --user add-wants niri.service dms
 ```
-#### fuzzel, mako, swaylock
+#### fuzzel
 ```
 # ubuntu
 sudo apt update
-sudo apt install fuzzel mako swaylock
+sudo apt install fuzzel
 
 # arch
-sudo pacman -Syu fuzzel mako swaylock
+sudo pacman -Syu fuzzel
 ```
 ## 2. Configuration
 #### niri
@@ -52,13 +52,6 @@ cp ./linux-config/filer/fuzzel.ini /etc/xdg/fuzzel/
 mkdir ~/.config/niri/scripts
 cp ./linux-config/filer/fuzzel-power.sh ~/.config/niri/scripts/
 chmod +x ~/.config/niri/scripts/fuzzel-power.sh
-```
-#### swaylock
-```
-mkdir .config/swaylock
-
-# klone repo
-cp ./linux-config/filer/swaylock/config ~/.config/swaylock/
 ```
 
 # Linux terminal config
