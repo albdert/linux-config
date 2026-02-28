@@ -1,14 +1,15 @@
 #!/usr/bin/env bash
 
 # Options
-options=" Poweroff\n Reboot\n Lock\n"
+options=" Poweroff\n Reboot\n Lock\n Log-out"
 
 # Selection
-selection=$(echo -e "$options" | fuzzel --dmenu --prompt "Power > " | awk '{print $2}')
+selection=$(echo -e "$options" | fuzzel --lines 4 --dmenu --prompt "Power > " | awk '{print $2}')
 
 # Action
 case "$selection" in
     Poweroff) systemctl poweroff ;;
     Reboot) systemctl reboot ;;
-    Lock) swaylock ;; # Change to your locker, e.g., hyprlock
-esac
+    Lock) dms ipc call lock lock ;; 
+    Log-out) niri msg action quit ;;
+  esac
